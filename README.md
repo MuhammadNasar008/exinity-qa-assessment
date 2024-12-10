@@ -31,9 +31,14 @@ The focus is on:
 ### **2. Install Dependencies**
 Install the required libraries using:
 ```bash
-pip install grpcio grpcio-tools pytest sqlite3
+pip install grpcio grpcio-tools pytest
 ```
+---
 
+## **Install the Package Locally**
+-  Install your package locally so Python can find it during imports.
+- `pip install -e .`
+- This installs your project in "editable" mode, meaning any changes to your code are immediately reflected.
 ---
 
 ## **Usage**
@@ -50,7 +55,6 @@ pip install grpcio grpcio-tools pytest sqlite3
 ---
 
 ## **Key Files**
-
 ### **1. server.py**
 - Implements a mock gRPC server streaming candlestick data.
 ### **2. test_chart_service.py**
